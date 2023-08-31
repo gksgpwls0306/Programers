@@ -6,9 +6,7 @@ class Solution {
         String[] num = new String[]{"zero","one","two","three","four","five","six","seven","eight","nine"};
         for(int i = 0; i<10; i++){
             String I= i+"";
-            if(numbers.contains(num[i])){
-                numbers = numbers.replace(num[i],I);
-            }
+            numbers = numbers.replace(num[i],I);
         }
         answer = Long.parseLong(numbers);
         return answer;
