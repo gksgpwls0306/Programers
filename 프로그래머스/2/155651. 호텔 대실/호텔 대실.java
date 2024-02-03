@@ -5,10 +5,6 @@ class Solution {
         int answer = 0;
         Arrays.sort(book_time, (x1,x2) -> timeConvert(x1[0]) - timeConvert(x2[0]));
         
-        // for(String[] s : book_time){
-        //     System.out.println(s[0]+" "+s[1]);
-        // }
-        
         for(int i = 0; i < book_time.length; i++){
             String[] end = book_time[i];
             int endTime = timeConvert(end[1]) + 10;
